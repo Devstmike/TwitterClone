@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+:root{
+    --my-grey: rgb(235, 243, 245);
+    --my-blue : rgb(38, 174, 216);
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.leftsidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 50px;
+    width: 320px;
+}
+
+.leftsidebar > *, .leftsidebar ul > li{
+    margin-bottom: 20px;
+}
+
+.leftsidebar ul li a{
+    color: black;
+    font-size: 1.3rem;
+}
+
+.leftsidebar .profile  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.leftsidebar .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftsidebar >p{
+    background-color: var(--my-blue);
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 0;
+}
+
+.leftsidebar ul li a i{
+    margin-right: 20px;
+    font-size: 1.4rem;
+}
+
+.leftsidebar > h1{
+    font-size: 2rem;
+}
+
+
+.mainContent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    /* background-color: red; */
+    width: calc(100% - 320px);
+    margin-left: auto;
+}
+
+.mainContent > .column1{
+    width: 60%;
+}
+
+.mainContent > .column2{
+    /* margin-top:-500px; */
+    width: 40%;
+    padding-right: 50px;
+    padding-left: 20px;
+ 
+}
+
+
+.mainContent > .column2 .live img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.mainContent > .column2 .Trends .trendword{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.mainContent > .column2 .Trends{
+    background-color: var(--my-grey);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mainContent > .column2 .Trends .trendword div:last-child{
+    font-size: 1.5rem;
+}
+
+.mainContent > .column2 .Trends .trendword .word p{
+    font-size: 0.8rem;
+}
+
+.mainContent > .column2 .Trends .trendword .word h3{
+    font-size: 1rem;
+}
+
+.mainContent > .column2 .search{
+    background-color: var(--my-grey);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.mainContent > .column2 .search input{
+    margin-left: 15px;
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+.mainContent > .column2 .live{
+    background-color: var(--my-grey);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.mainContent > .column2 .live div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* fix following for */
+ .mainContent > .column1 > .following {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--my-grey);
+    padding-left: 100px;
+}
+
+.mainContent > .column1 .post >  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:  15px;
+}
+
+.mainContent > .column1 >  .post{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 10px ;
+}
+
+.mainContent > .column1 > .post > .wrapper > *{
+    margin-bottom: 20px;
+}
+
+.mainContent > .column1 > .post > .wrapper > input{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.mainContent > .column1 > .post > .wrapper > select{
+   color: var(--my-blue);
+   border: 1px solid;
+   border-radius: 15px;
+   padding: 3px 10px;
+   font-weight: bold; 
+   font-size: 0.9rem;
+}
+
+.mainContent > .column1 > .post > .wrapper > .reply{
+    color: var(--my-blue);
+}
+
+.mainContent > .column1 > .post > .wrapper > .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.mainContent > .column1 > .post > .wrapper{
+    width: 100%;
+}
+
+.mainContent > .column1 > .post > .wrapper > .icons > p{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--my-blue);
+    color: white;
+    font-weight: bold;
+}
+
+.mainContent > .column1 > .post > .wrapper > .icons > .list i{ 
+    color: var(--my-blue);
+    margin-right: 15px;
+}
+
+.mainContent > .column1 > .post > .wrapper > h3{
+    text-align: center;
+    color: var(--my-blue);
+    font-weight: normal;
+    border: 1px solid var(--my-grey);
+    border-right: none;
+    border-left: none;
+    padding: 10px 0;
+}
+
+.mainContent > .column1 > .peoplePosts >  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right:  15px;
+}
+
+.mainContent > .column1 > .peoplePosts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 10px;
+}
+
+.mainContent > .column1 > .peoplePosts  .postcontent > .icons , .mainContent > .column1 > .peoplePosts  .postcontent > .icons div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+
+.mainContent > .column1 > .peoplePosts  .content .name h3{
+    display: inline;
+}
+
+.mainContent > .column1 > .peoplePosts  .postcontent > .icons div > *:first-child{
+    margin-right: 10px;
+}
+
+
+.mainContent > .column1 > .peoplePosts  .postcontent > .icons div{
+    margin-top: 10px;
+}
+
+.mainContent > .column1 > .peoplePosts  .postcontent > small{
+    color: var(--my-blue);
+    display: inline-block;
+    margin: 10px 0;
+
+}
+
+.mainContent > .column1 > .peoplePosts  .postcontent > p:first-child{
+    margin-top: 10px;
+}
+
+.mainContent > .column1 > .peoplePosts {
+    border-bottom: 1px solid var(--my-grey);
+}
+
+
+.mainContent .fixed{
+    position: fixed;
+    right: 0;
+    top: 0;  
+    width: 30%;
+}
