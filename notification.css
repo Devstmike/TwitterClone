@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+:root{
+    --my-grey: rgb(235, 243, 245);
+    --my-blue : rgb(38, 174, 216);
+}
+
+
+.mainContent .notify, .mainContent .who{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContent .who{
+    justify-content: space-around;
+    padding: 30px 0 0;
+    border-bottom:1px solid var(--my-grey) ;
+}
+
+.mainContent .notify{
+    padding: 0 20px;
+    /* border-bottom:1px solid var(--my-grey) ; */
+}
+
+.notifications .image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.notifications .image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: inherit;
+    margin-right: 15px;
+}
+
+.notifications{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    border-bottom:1px solid var(--my-grey) ;
+    padding: 15px 0;
+}
+
+.notifications .icon{
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.mainContent{
+    padding: 20px;
+}
+
+.mainContent .who div:first-child h3::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--my-blue);
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.mainContent .who div:first-child h3{
+    padding: 0 20px;
+    /* background-color: red; */
+}
+
+.mainContent .who div{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.mainContent .column1{
+    margin-left: -20px;
+    /* background-color: red; */
+}
+
+.notifications .hide{
+    display: none;
+}
+
+.notifications .blue{
+    color: var(--my-blue);
+}
+
+.mainContent .column1 {
+    padding-left: 20px;
+}
