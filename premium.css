@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+:root{
+    --my-grey: rgb(235, 243, 245);
+    --my-blue : rgb(38, 174, 216);
+}
+
+
+body > .background{
+    display: none;
+}
+    
+body > .ShowPremium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.wrapper{
+    background-color: white;
+    border-radius: 20px;
+    padding: 100px 70px 0;
+    width: 600px;
+    height: 80vh;
+   position: relative; 
+}
+
+.wrapper > *:not(.wrapper .option){
+    text-align: center;
+}
+
+.wrapper .option{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+}
+
+
+.wrapper .option > div{
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid var(--my-grey); */
+    width: 250px;
+    height: 120px;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgb(173, 168, 168);
+}
+
+.wrapper .option > div  h3{
+    font-size: 0.9rem;
+}   
+
+
+.wrapper .option > div p{
+    font-size: 0.8rem;
+    /* background-color: red; */
+}
+
+.wrapper .option > div:first-child{
+    margin-right: 20px;
+}
+
+.wrapper button{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 50px;
+    padding: 20px 0;
+    font-size: 1rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.background .wrapper i:first-child{
+    position: absolute;
+    /* background-color: red; */
+    top: 0;
+    left: 0;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+
+.wrapper > h1 {
+    margin-bottom: 10px;
+}
+
+.wrapper >  p{
+    margin-bottom: 30px;
+}
+
+.wrapper > p:last-child a{
+    color: var(--my-blue);
+}
