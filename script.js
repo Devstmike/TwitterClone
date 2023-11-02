@@ -14,4 +14,14 @@ window.onscroll = () => {
     } 
 
 }
-// 1265
+
+const premiumData = document.querySelector(".background");
+const premiumhtml = document.querySelector(".premiumpage");
+premiumhtml.onclick = (e) => {
+    e.preventDefault()
+ //   alert("worke")
+
+    premiumData.classList.add("ShowPremium")
+ //  alert("clicked")
+   console.log("clicked")
+}
