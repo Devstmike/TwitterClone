@@ -6,7 +6,7 @@ const leftcontent = `<h1><i class="fa-brands fa-x-twitter"></i></h1>
     <li><a href="message.html"><i class="fa-solid fa-magnifying-glass"></i><span>Explore</span></a></li>
     <li><a href="notification.html"><i class="fa-regular fa-bell"></i><span>Notifications</span></a></li>
     <li><a href=""><i class="fa-regular fa-envelope"></i><span>Messages</span></a></li>
-    <li><a href=""><i class="fa-solid fa-list"></i><span>Lists</span></a></li>
+    <li><a href="List.html"><i class="fa-solid fa-list"></i><span>Lists</span></a></li>
     <li><a href=""><i class="fa-solid fa-user-group"></i><span>Communities</span></a></li>
     <li class="premiumpage"><a href="premium.html"><i class="fa-brands fa-x-twitter"></i><span>Premium</span></a></li>
     <li><a href=""><i class="fa-solid fa-user-large"></i><span>Profile</span></a></li>
